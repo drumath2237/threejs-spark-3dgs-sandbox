@@ -12,6 +12,8 @@ import {
 
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
+import gsAssetPath from "../assets/pizza.sog?url";
+
 function main() {
   const renderCanvas = document.querySelector<HTMLCanvasElement>(
     "#renderCanvas",
