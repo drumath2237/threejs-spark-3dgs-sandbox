@@ -1,17 +1,15 @@
 import "./style.css";
 
-import { SplatLoader, SplatMesh } from "@sparkjsdev/spark";
+import { SplatMesh } from "@sparkjsdev/spark";
 import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
 
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-
-import sushi from "../assets/sushi.sog?url";
 import pizza from "../assets/pizza.sog?url";
+import sushi from "../assets/sushi.sog?url";
 
 async function main() {
-  const renderCanvas = document.querySelector<HTMLCanvasElement>(
-    "#renderCanvas",
-  );
+  const renderCanvas =
+    document.querySelector<HTMLCanvasElement>("#renderCanvas");
   if (!renderCanvas) {
     return;
   }
